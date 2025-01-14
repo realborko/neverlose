@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="css/css-app.css" rel="stylesheet">
+		<meta name="google-site-verification" content="8kDVb1U83X9tvIBFSqOfemMOGwRcWc-H1BOBZE_5gCI">
+		<meta name="yandex-verification" content="f5eb71addea0ad12">
+		<meta name="verification" content="28d5f7d28e31fd5be4e94628a4f47a">
+		<meta name="verification" content="90d32c4e6c1a5a36161bf452761d2d">
+		<meta name="webmoney.attestation.label" content="webmoney attestation label#52271762-51F0-4D8F-842B-AB98F530A59B">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Neverlose.cc - Terms Of Use</title>
+
+	<meta name="msapplication-TileColor" content="#0095B9">
+	<meta name="theme-color" content="#030f1a">
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-favicon-16x16.png">
+<link rel="manifest" href="/static/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="/static/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">	<style>
+.horizontal_btn {
+  display: flex;
+  column-gap: 15px;
+}
+
+textarea.input_aug {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 77px;
+  height: 77px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0,0,0,0);
+  border: 1px solid rgba(0,149,185,.3);
+  outline: none;
+  border-radius: 4px;
+  -moz-appearance: textfield;
+}
+
+.paste_popup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+    row-gap: 15px !important;
+    padding: 20px 40px;
+}
+.paste_popup .text {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    color: #fff;
+}
+
+.soc_fixed .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin-left: 5px !important;
+}
+
+.soc_fixed {
+  bottom: 35%;
+  align-items: center;
+  left: 20px !important;
+}
+
+.soc_fixed p {
+  width: auto;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+}
+
+footer .copy {
+  --lrpad: 0px;
+  padding-left: var(--lrpad) !important;
+  padding-right: var(--lrpad) !important;
+}
+	</style>
+</head>
+<body>
+	<div>
+		<!-- div id="ball"></div -->
+    <div style="display: none;" id="xd-csrf--" x-csrf=""></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        let cse = document.getElementById("xd-csrf--");
+        let cst = cse.getAttribute("x-csrf");
+        if (!cst) { return; }
+
+        let forms = document.getElementsByTagName("form");
+        for(var i = 0; i < forms.length; i++) {
+          let input = document.createElement("input");
+          input.type = "hidden";
+          input.name = "csrf";
+          input.value = cst;
+          forms[i].appendChild(input);
+        }
+      });
+    </script>
+
+<style>
+    .check-new{
+        align-self: flex-start;
+        padding-left: 60px !important;
+    }
+</style>
+<div class="popup_fade"></div>
+
+<script>
+        var auth_captcha;
+        var reg_captcha;
+        var forgot_captcha;
+        var captchaCallBack = function() {
+            auth_captcha = grecaptcha.render('auth-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+
+            reg_captcha = grecaptcha.render('reg-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+            
+            forgot_captcha = grecaptcha.render('forgot-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+        };
+</script>
+
+<div class="popups" id="reg">
+    <div class="block widthPopUp">
+        <div class="close">
+            <a href="#"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <form method="post" action="/doregister" class="userform">
+            <div class="container flex-cont">
+                <div class="logo">
+                    <a href="neverlose.html">
+                        <img src="images/img-logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="status"></div>
+                <div class="input_log">
+                    <input type="text" placeholder="Login" name="login" required>
+                </div>
+                <div class="input_pass">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="input_email">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="capcha"><div id="auth-captcha"></div></div>
+                
+                <div class="check check-new">
+                    <input type="checkbox" name="yes" id="yesCheck" required>
+                    <label for="yesCheck">I agree with <a href="tos.html">terms of use</a>
+                        
+                    </label>
+                </div>
+                <div class="check check-new">
+                    <input type="checkbox" name="yes" id="yesCheck2" required>
+                    <label for="yesCheck2">I agree with  <a href="legal.html">user license agreement</a>
+                    </label>
+                </div>
+                <div class="check check-new">
+                    <input type="checkbox" name="yes" id="yesCheck3" required>
+                    <label for="yesCheck3">I agree with <a href="privacy.html">privacy policy</a>
+                    </label>
+                </div>
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="popups" id="log">
+    <div class="block widthPopUp">
+        <div class="close">
+            <a href="#"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <form method="post" action="/login" class="userform">
+            <div class="container flex-cont">
+                    <div class="logo">
+                        <a href="neverlose.html">
+                            <img src="images/img-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="status"></div>
+                    <div class="input_log">
+                        <input type="text" placeholder="Login" name="login" required>
+                    </div>
+                    <div class="input_pass">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="capcha"><div id="reg-captcha"></div></div>
+                    <input type="submit" value="Login" class="btn">
+                    <div class="some_text">
+                        <a href="#respassw" class="to-popup">Forgot password?</a>
+                        <a href="#respassw" class="to-popup">Resend activation link</a>
+                        <a href="#reg" class="to-popup">Still don't have an account? <span>Register</span></a>
+                    </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="popups" id="2facode">
+    <div class="block widthPopUp">
+        <div class="close">
+            <a href="#"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <form method="post" action="/2falogin" class="userform">
+            <div class="container flex-cont">
+                    <div class="logo">
+                        <a href="neverlose.html">
+                            <img src="images/img-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="status"></div>
+					
+					<div class="twofa_text">
+                      Please enter the verification code generated by the app on your phone.
+                    </div>
+					
+                    <div class="input_log" style="margin-bottom:5px;">
+                        <input type="text" placeholder="Code from authenticator" name="code" required maxlength="6" minlength="6">
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                <div class="some_text">
+                    <a href="lost_2fa_help.html" target="_blank">Lost 2FA?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="popups" id="respassw">
+    <div class="block widthPopUp">
+        <div class="close">
+            <a href="#"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <form method="post" action="/resetpassw" class="userform">
+            <div class="container flex-cont">
+                    <div class="logo">
+                        <a href="neverlose.html">
+                            <img src="images/img-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="status"></div>
+                    <div class="input_email">
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="capcha"><div id="forgot-captcha"></div></div>
+                    <input type="submit" value="Send" class="btn">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+		<section class="menu">
+			<div class="logo">
+				<div class="img">
+					<a href="neverlose.html"><img src="images/img-logo.png" alt="logo"></a>
+				</div>
+			</div>
+			<div class="links">
+				<a href="neverlose.html">Main</a>
+				<a href="forum.html">Forum</a>
+				<a href="help.html">Help</a>
+			</div>
+			<div class="other">
+				
+				<div class="custom-select lang">
+					<select>
+                        <option value="1">En</option>
+						<option value="0">Ru</option>
+						<option value="1">En</option>
+					</select>
+				</div>
+				<div class="reg">
+					<a href="#reg" class="to-popup"> Register</a>
+				</div>
+				<div class="login">
+					<a href="#log" class="to-popup">Login</a>
+				</div>
+			</div>
+		</section>
+
+<style>
+.text2 {
+    color: #fff;
+    margin: 0 auto;
+    width: min(900px, 100%);
+}
+
+.text2_popup {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* === blocks === */
+
+.text2 :is(p, .para) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.text2 .bottom {
+    margin-top: 35px;
+}
+
+.text2 h1 {
+    font-size: 1.75em;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.text2 h2 {
+    font-size: 1.40em;
+    font-weight: 900;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.text2 h3 {
+    font-size: 1.15em;
+    font-weight: 700;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.text2.faq h2 {
+    text-align: left;
+    /* color: #51afff; */
+}
+
+.text2 ul {
+    list-style: outside disc;
+    padding-left: 8px;
+}
+.text2 ol {
+    list-style: outside number;
+}
+.text2 li :is(ul, ol) {
+    padding-left: 30px;
+}
+.text2 li {
+    margin-bottom: 5px;
+}
+
+.text2 blockquote {
+    border-left: 2px solid;
+    margin: 10px 0;
+    padding: 10px 5px;
+    padding-left: 15px;
+    border-color: #2d758e;
+    background-color: #0c293394;
+}
+
+.text2 a {
+    color: #5eb4ff;
+    text-decoration: none;
+}
+
+
+
+/* === text styles === */
+
+.text2 s {
+    text-decoration: line-through;
+}
+
+.text2 .mono {
+    font-family: nl_mono;
+}
+
+.text2 :is(b, strong, .bold) {
+    font-weight: 600;
+}
+
+.text2 code {
+  font-family: nl_mono;
+  font-size: 1.2em;
+  padding: 2px 6px;
+  background: #0000005e;
+  border: 1px solid #177ad05e;
+  border-radius: 4px;
+}
+
+.text2 :is(i, .italic) {
+    font-style: italic;
+}
+
+.text2 .smaller {
+    font-size: 0.8em;
+}
+
+.text2 .dimmer {
+    color: #a2a2a2;
+}
+</style>
+
+<div>
+    <section class="tos">
+        <div class="wrapper">
+            <h1>Terms Of Use</h1>
+            <div class="container">
+                <div class="text ">
+                             <div class="card-body">
+                <p style="font-weight: 600; padding-left: 0;"> Last updated on 2024.01.09</p>
+
+                <ol>
+                    <li style="margin-bottom: 2rem;">
+                        <h2> General </h2>
+                        <ol>
+                            <li>
+                                Mindubaev Vladislav Vladimirovich IP, hereinafter referred to as the "Developer", publishes the Public
+                                an offer for the implementation of the Services posted on the official website of the Developer https://neverlose.cc
+                            </li>
+                            <li>
+                                Based on the foregoing, carefully read the text of the public offer, and,
+                                if you not
+                                agree with any clause of the offer, you are invited to refuse to use
+                                Services,
+                                provided by the Seller.
+                            </li>
+                            <li>
+                                In this offer, unless the context requires otherwise,
+                                the following
+                                the terms have the following meanings:
+                                <ul>
+                                    <li>
+                                        "Offer" - a public offer of the Seller addressed to any individual
+                                        , conclude an agreement with him on the existing conditions contained in
+                                        The Agreement, including all its annexes.
+                                    </li>
+                                    <li>
+                                        "Buyer" - an individual who has entered into an Agreement with the Seller on the terms,
+                                        contained in the Agreement.
+                                    </li>
+                                    <li>
+                                        "Acceptance" - full and unconditional acceptance by the Buyer of the terms of the Agreement.
+                                    </li>
+                                    <li>
+                                        "Service" - a list of assortment names presented on the official
+                                        website.
+                                    </li>
+                                    <li>
+                                        "Order" - individual items from the assortment list of Services specified
+                                        By the buyer when placing an application on the website.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li style="margin-bottom: 2rem;">
+                        <h2> Subject of the agreement </h2>
+                        <ol>
+                            <li>
+                                The Seller sells the Services in accordance with the current price list published on
+                                the Seller's website in an interactive form, and the Buyer
+                                makes payment and accepts the Service in accordance with the terms of this Agreement.
+                            </li>
+                            <li>
+                                This Agreement and its annexes are official documents of the Seller and
+                                an integral part of the offer.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li style="margin-bottom: 2rem;">
+                        <h2> Checkout </h2>
+                        <ol>
+                            <li>
+                                The Service is ordered by the Buyer through the website "https://neverlose.cc"
+                            </li>
+                            <li>
+                                When registering on the Seller's website, the Buyer undertakes to provide the following
+                                registrationinformation about yourself: nickname, e-mail address.
+                            </li>
+                            <li>
+                                Payment by the Buyer for the Order made independently on the website means
+                                Buyer's consent to the terms of this Agreement. The day of payment for the Order is the date
+                                conclusion of an Agreement between the Seller and the Buyer.
+                            </li>
+                            <li> All information materials presented on the site "https://neverlose.cc" are
+                                for reference only and cannot fully convey reliable information about
+                                certain properties and characteristics of the Service. If the Buyer has
+                                questions regarding the Service, before placing an Order, he must apply for
+                                consultation with the Seller.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li style="margin-bottom: 2rem;">
+                        <h2> Terms of Order Execution </h2>
+                        <ol>
+                            <li>
+                                The term for the execution of the Order is 1 working day. The deadline for the execution of the Order in exceptional cases can be agreed with
+                                The Buyer individually, depending on the type of Services provided. When
+                                the inability to provide the Service by the Seller, including for reasons beyond the control of
+                                the latter, the Seller has the right to cancel the specified Service from the Buyer's Order. Salesman
+                                undertakes to notify the Buyer about the change in his Order via Email.
+                            </li>
+                            <li>
+                                The order is considered completed at the time of acceptance of the service by the Buyer.
+                            </li>
+                            <li>
+                                If the Buyer provides inaccurate information about his contact details
+                                The seller is not responsible for the improper execution of the Order.
+                            </li>
+                            <li>
+                                In case of improper execution of the Order due to the fault of the Seller, the repeated implementation of the Order
+                                carried out free of charge.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li style="margin-bottom: 2rem;">
+                        <h2> Order Payment </h2>
+                        <ol>
+                            <li>
+                                Payment for the executed Order is carried out by transferring funds from the Buyer
+                                using electronic means of payment to the Seller's account. Confirmation of payment
+                                of the completed Order is a receipt.
+                            </li>
+                            <li>
+                                The prices for the Services indicated on the website "https://neverlose.cc" may be
+                                changed by the Seller unilaterally without notifying the Buyer.
+                            </li>
+                            <li>
+                                Funds are accepted in one way: non-cash payment
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li style="margin-bottom: 2rem;">
+                        <h2> Return Order </h2>
+                        <ol>
+                            <li>
+                                The Buyer has the right to refuse the ordered Service at any time before the execution
+                                Order.
+                            </li>
+                            <li>
+                                If the Service is provided of inadequate quality, the Buyer undertakes to contact
+                                To the seller as soon as possible.
+                            </li>
+                            <li>
+                                Paid
+                                By the Buyer, the amount for the Service of inadequate quality is subject to return to the Buyer in
+                                within 10 calendar days from the date of the relevant request. Return
+                                funds are transferred to the Buyer's electronic account within 5 working days.
+                            </li>
+                            <li>
+                                For money-back for the Service of proper quality (see Appendix 1), must
+                                to be
+                                the following conditions are met:
+                                <ul>
+                                    <li>
+                                        there is no successful launch of the software, which is recorded on the Internet server
+                                        Seller when opening the menu of the program running in the game.
+                                    </li>
+                                    <li>
+                                        there is no refusal of the Buyer to help the Seller if it is impossible to launch
+                                        software on the Buyer's computer caused by a third party
+                                        software, or other problem that can be fixed
+                                        Seller by providing remedial instructions for Buyer
+                                    </li>
+                                </ul>
+                                In other cases, a refund for a service of proper quality is not possible.
+                            </li>
+                            <li>
+                                To return money for a service of inadequate quality (see Appendix 1),
+                                an invoice or an act on the return of funds is drawn up, which indicates:
+                                <ul>
+                                    <li> the full brand name of the Seller; </li>
+                                    <li> surname, name and patronymic; </li>
+                                    <li> Service name; </li>
+                                    <li> the date of the Service; </li>
+                                    <li> amount to be returned; </li>
+                                    <li> signatures of the Seller and the Buyer; </li>
+                                </ul>
+                            </li>
+                            <li>
+                                A refund is possible in the absence of the fact of the beginning of the provision of the service.
+                            </li>
+                            <li>
+                                The Buyer has the right to present a claim to the Seller for the return of the cost of the Service
+                                no later than 7 (seven) days from the date of acceptance of the Order.
+                            </li>
+                            <li>
+                                To return funds to a bank card, the Customer must fill in
+                                "Application for the return of funds", which is sent at the request of the Company to
+                                Customer's email address, and send it to
+                                email <a href="email-protection.html" class="__cf_email__" data-cfemail="bdcfd8dbc8d3d9fdd3d8cbd8cfd1d2ced893dede">[email&nbsp;protected]</a>. Refunds will be issued at
+                                the bank account of the Customer from which the payment for the Service was made, within 5 (five) working days from
+                                of the day of receipt of the "Statement for the return of funds" by the Company.
+                            </li>
+                            <li>
+                                The term for consideration of the Application and the return of funds to the Customer starts from
+                                the moment the Company receives the Application and is calculated in working days, excluding
+                                holidays / weekends. If the application was received by the Company after 15:00 on a business day, or
+                                on a holiday / weekend, the moment the Company receives the Application is the following
+                                working day.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li style="margin-bottom: 2rem;">
+                        <h2> Rights, duties and responsibilities </h2>
+                        <ol>
+                            <li>
+                                The Seller is not responsible for the improper use of the Services by the Buyer,
+                                ordered on the website or through the Operator.
+                            </li>
+                            <li>
+                                This site and all the information and materials contained on it are presented to you by
+                                principle as is, without warranty of any kind.
+                            </li>
+                            <li>
+                                We (including our partners) are not responsible for direct, indirect, incidental or
+                                other
+                                type of damage (including, but not limited to, any kind of bans and blocking) due to
+                                use or inability to use content, materials or functionality
+                                of this site.
+                            </li>
+                            <li>
+                                The seller has the right to transfer his rights and obligations for the execution of Orders to third
+                                persons.
+                            </li>
+                            <li>
+                                The Buyer has the right to send all claims for improper execution of the order to the address
+                                email specified on the website https://neverlose.cc/contact, under
+                                Contacts. All information received is processed within 10 (ten) business days
+                            </li>
+                            <li>
+                                The Buyer has no right to transfer, sell or exchange access to the Service provided by
+                                By the seller
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <h2>
+                    Annex 1.
+                </h2>
+                <p>
+                    Service of good quality - software provided to the Buyer that works without
+                    complaints on the computer of the Seller and other Buyers, which is confirmed by the information system
+                    The Seller, which records the successful use of the software of all Buyers.
+                </p>
+                <p>
+                    Mindubaev Vladislav Vladimirovich IP
+                </p>
+                <p>
+                    ITN 771582890130, PSRN 319774600331865 
+                </p>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+        
+        <footer>
+			<div class="container">
+				<div class="logo">
+					<div class="img">
+						<a href="neverlose.html"><img src="images/img-logo.png" alt="logo"></a>
+					</div>
+				</div>
+				<div class="footer_links">
+					<div class="useful_links">
+						<!--a href="/forum">Forum</a-->
+						<a href="help.html">Help</a>
+						<a href="tos.html">Terms of use</a>
+						<a href="legal.html">User License Agreement</a>
+						<a href="behavior.html">Behavior rules</a>
+						<a href="privacy.html">Privacy policy</a>
+						<a href="youtube.html">Youtube policy</a>
+						<a href="mediamaker_rules.html">Rules for media makers</a>
+						<a href="developers.html">Developers</a>
+						<a href="contact.html">Contacts</a>
+					</div>
+					<div class="separator"></div>
+					<div class="product_links">
+						<a href="product?type=cs2.html">CS2</a>
+						<a href="product?type=csgo.html">CS:GO</a>
+					</div>
+					<!--img src="/static/assets/img/mps_logo.png" style="width:250px"-->
+					<!--div class="soc">
+						<p>Follow us</p>
+<div class="items">
+    <div class="item"><a target="_blank" href="https://t.me/neverlosecc"><i class="fab fa-telegram-plane"></i></a></div>
+    <div class="item"><a target="_blank" href="https://vk.com/neverlose"><i class="fab fa-vk"></i></a></div>
+    <div class="item"><a target="_blank" href="/ds"><i class="fab fa-discord"></i></a></div>
+    <div class="item"><a target="_blank" href="https://twitter.com/neverloseoff"><i class="fab fa-twitter"></i></a></div>
+    <div class="item"><a target="_blank" href="https://www.youtube.com/channel/UCxVN7ejqdHXZlfukimxyaxA"><i class="fab fa-youtube"></i></a></div>
+</div>
+					</div-->
+				</div>
+
+
+				<div class="copy">
+					neverlose.cc &copy; 2020-2025<br><br>
+					CS2, CS:GO, Counter-strike, Counter-Strike:Global Offensive are registered trademarks of
+					Valve Corporation. Our product, neverlose.cc, is not affiliated with, endorsed by, or
+					sponsored by Valve Corporation or its affiliates. All trademarks, service marks, and
+					trade names used in this website are the property of their respective owners.<br>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script data-cfasync="false" src="js/cloudflare-static-email-decode.min.js"></script></body>
+
+    <script type="text/javascript" src="js/js-app.js"></script>
+<script src="js/recaptcha-api.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+	ym(64402294, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true
+	});
+ </script>
+ <noscript><div><img src="images/watch-64402294" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115062869-2">
+ </script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-115062869-3');
+ </script>
+</html>
